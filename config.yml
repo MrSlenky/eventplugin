@@ -1,0 +1,106 @@
+# ----------------------------------------------------------------------------------------------------------
+# POZOR! TENTO KONFIGURAČNÍ SOUBOR JE KOMPAKTIBILNÍ POUZE S VERZÍ v1.2 AKTUÁLNÍ VERZI ZJISTÍTE PŘÍKAZEM /ep
+# ----------------------------------------------------------------------------------------------------------
+
+# Chyby
+no-permission: "&6&lEventPl &8› &7Na tuto akci nemáš dostatečné oprávnění!"
+not-a-number: "&6&lEventPl &8› &7Zadaná hodnota není číslo."
+  
+
+#--- Chat ---
+
+# Mute a unmute chatu, mozne playceholdery: {player}
+chat-mute: "&6&lEventPl &8› &7Chat byl &cvypnut &7hráčem &3{player}"
+chat-unmute: "&6&lEventPl &8› &7Chat byl &azapnut &7hráčem &3{player}"
+chat-clear: "&6&lEventPl &8› &7Chat byl vymazán hráčem &3{player}"
+
+boadcast-chat: true
+chat-format: "{prefix}{displayname} &8› &7{suffix}{message}"
+
+# Kdyz hrac zkusi neco nmapsat ale chat je vypnuty
+chat-trytosend: "&8——————— &fChat je momentálně &cvypnutý &8———————"
+
+# Pomoc prikazu /chat
+chat-help:
+  - "&8—————————— &6EventPlugin &8——————————"
+  - ""
+  - "&3/chat mute &f- Vypne nebo zapne chat."
+  - "&3/chat clear &f- Vyčistí chat."
+  - ""
+  - "&8———————————————————————————"
+
+# Zakazane prikazy
+chat-blocked-commands:
+  - "/pl"
+  - "/msg"
+  - "/me"
+  - "/minecraft:me"
+  - "//calc"
+#--- Event ---
+
+# Odpocet do evenentu, placeholdery: {s}
+event-countdown: "&6&lEventPl &8› &7Event začíná za &3{s} &7sekund!"
+event-countdown-end: "&6&lEventPl &8› &3Start!"
+
+#Napovda k /event
+event-help:
+  - "&8—————————— &6EventPlugin &8——————————"
+  - ""
+  - "&3/event countdown &b[číslo] &f- Začne odpočítávání"
+  - "&3/event start &b[číslo] &f- Začne odpočítávání"
+  - "&3/event addmsg &f- Přidá itnro zprávu na aktuálním místě"
+  
+  - "&b&lIntegrace s discordem:"
+  - "&3/event edit &f- Otevře grafické nastavení eventu"
+  - "&3/event annouce &f- Ohlásí event"
+  - "&3/event winner &b[hráč] &f- Ohlásí vítěze"
+  - ""
+  - "&8———————————————————————————"
+
+#Konfigurace
+help:
+  - "&8—————————— &6EventPlugin &8——————————"
+  - "Akutální verze pluginu: &3v{v}"
+  - "Pro chat nápovědu napiš &3/chat"
+  - "Pro event nápovědu napiš &3/event"
+  - ""
+  - "&3/ep reload &f- Načte konfigurační soubory znovu"
+  - "&3/hc &b[hodnocení] &b[důvod] &f- Načte konfigurační soubory znovu"
+  - "&8———————————————————————————"
+  
+settings:
+  title: "&8&lNastavení eventu"
+  item-name: "&8Nastavení {thing}"
+  item-lore: "&7Momentálně nastaveno na: {value}"
+  submit: "&2&l Ohlásit Event!"
+
+config-reload: "&6&lEventPl &8› &7Konfigurační soubory pluginu byly úspěšně načteny."
+
+bedrock-squad-not-allowed: "Haha bedrock squad se nemůže napojit xdd"
+bedrock-squad-try-to-connect: "&6&lEventPl &8› &3{bsmembername} ({bsmemberip}) &cse pokusil připojit, ale by mu zablokován přístup."
+
+command-spy: "&6&lEventPl &8› &3{player} &7spustil příkaz &6{command}"
+
+#Soubory
+file-save: "&6&lEventPl &8› &7Zpráva byla uložena s id {id}"
+final-save: "&6&lEventPl &8› &7Finální pozice byla úspěšně uložena."
+save-error: "&6&lEventPl &8› &cNebylo možné uložit soubor. Podívej se do konzole pro detaily"
+
+# Prohlasovaci udaje do hodnotziciho systemu
+event-enable: true
+event-disabled: "&6&lEventPl &8› &7Na tomto serveru není event systém aktivován."
+
+http-success: "&6&lEventPl &8› &7HTTP request byl úspěšně odeslaný"
+http-error: "&6&lEventPl &8› &cNebylo možné poslat HTTP request, podívej se do console pro detaily."
+
+event-endpoint: "http://89.203.248.129:21366/"
+event-username: "Access"
+event-password: "Denied"
+
+rating-success: "&6&lEventPl &8› &aÚspěšně jsi odeslal hodnocení."
+rating-error: "&6&lEventPl &8› &cHodnocení nebylo možno poslat"
+already-rated: "&6&lEventPl &8› &cJiž jsi odeslal hodnocení. Další hodnocení můžeš poslat, až se přihllásíš znovu."
+rating-help: "&6&lEventPl &8› &7Použití příkazu: &3/hc &b[číslo] [důvod]"
+
+text-input: "&6&lEventPl &8› &7Napiš novou hodnotu pro &6{key}."
+text-input-done: "&6&lEventPl &8› &7Nová hodnota nastavena na&f {value}"

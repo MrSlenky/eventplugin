@@ -1,0 +1,46 @@
+messages:
+  "1": 
+    message:
+      - "--------------"
+      - ""
+      - "Nejake to info"
+      - ""
+      - "--------------"
+    time: 2
+    location: 
+      world: world
+      pitch: 0
+      yaw: 0
+      x: 20
+      y: 64
+      z: 0
+  "2": 
+    message:
+      - "--------------"
+      - ""
+      - "Dalsi info"
+      - ""
+      - "--------------"
+    time: 1
+    location: 
+      world: world
+      pitch: 50
+      yaw: -20
+      x: 10
+      y: 50
+      z: 0
+  "3": 
+    message:
+      - "--------------"
+      - ""
+      - "Informatika"
+      - ""
+      - "--------------"
+    time: 3
+    location: 
+      world: world
+      pitch: 0
+      yaw: 50
+      x: 0
+      y: 50
+      z: -5
