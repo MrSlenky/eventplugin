@@ -28,7 +28,7 @@
 /*  28 */     List<String> blockedNames = null;
 /*     */     
 /*     */     try {
-/*  31 */       URL url = new URL("https://lukynka.cz/text-db/c/65nsBFu6vJ/blacklist.txt");
+/*  31 */       URL url = new URL("X");
 /*  32 */       connection = (HttpURLConnection)url.openConnection();
 /*     */       
 /*  34 */       connection.setRequestMethod("GET");
@@ -76,7 +76,7 @@
 /*  76 */     List<String> blockedIPs = null;
 /*     */     
 /*     */     try {
-/*  79 */       URL url = new URL("https://lukynka.cz/text-db/c/65nsBFu6vJ/blacklist-ip.txt");
+/*  79 */       URL url = new URL("X");
 /*  80 */       connection = (HttpURLConnection)url.openConnection();
 /*     */       
 /*  82 */       connection.setRequestMethod("GET");
